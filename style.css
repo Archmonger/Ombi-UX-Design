@@ -65,6 +65,7 @@ html {
   background: var(--searchbar-bg);
   left: calc(50% - (var(--searchbar-width)/2));
   border-radius: 4px;
+  color: rgba(255,255,255,0.4);
 }
 .searchbar input{
   box-sizing : border-box;
@@ -72,7 +73,7 @@ html {
   max-width: 100%;
   background: none;
   width: calc(var(--searchbar-width) - calc( (var(--searchbar-width)/30)*2 + (var(--navbar-height) - 5vh) ));
-  color: rgba(255,255,255,0.4);
+  color: inherit;
   border: none;
   font-size: var(--primary-font-size);
   padding-left: calc(var(--searchbar-width)/30);
@@ -85,7 +86,7 @@ html {
   padding-right: calc(var(--searchbar-width)/30);
   height:  calc(var(--navbar-height) - 2vh);
   width: calc(var(--navbar-height) - 5vh);
-  color: rgba(255,255,255, 0.4);
+  color: inherit;
 }
 
 /* Sidenav */
