@@ -9,7 +9,8 @@
   --poster-container-height: calc(var(--poster-width) * 2.1);
   --poster-padding: 0.5vw;
   --viewport-padding: 1.5vw 1.5vw;
-  --navPages-button-padding: 1.25vh 2vw;
+  --navPages-button-padding: 1.25vh 1.5vw;
+  --navPages-button-padding-suboption: 1.25vh 1.5vw 1.25vh 2.5vw;
   --primary-font-size: 90%;
   --secondary-font-size: 72%;
   --poster-leftright-padding: 0.5vw;
@@ -130,6 +131,10 @@ html {
 .navPages-page {
   text-overflow: inherit;
   padding: var(--navPages-button-padding);
+}
+
+.navPages-page.suboption{
+    padding: var(--navPages-button-padding-suboption);
 }
 
 /* Scrollbar */
