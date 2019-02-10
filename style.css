@@ -8,7 +8,7 @@
   --poster-height: calc(var(--poster-width) * 1.5);
   --poster-container-height: calc(var(--poster-width) * 2.1);
   --poster-padding: 0.5vw;
-  --viewport-padding: 1.5vh 1.5vw;
+  --viewport-padding: 1.5vw 1.5vw;
   --navPages-button-padding: 1.25vh 2vw;
   --primary-font-size: 90%;
   --secondary-font-size: 72%;
@@ -19,6 +19,8 @@
   --poster-drop-shadow: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.7));
   --sidenav-drop-shadow: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7));
   --navPages-page-height: 2vh;
+  --searchbar-width: 25vw;
+  --searchbar-bg: #252525;
 }
 
 /* Body */
@@ -52,6 +54,38 @@ html {
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
   padding-left: 0.5vw;
+}
+.searchbar{
+  position: fixed;
+  top: 0px;
+  height: calc(var(--navbar-height) - 2vh);
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: var(--searchbar-width);
+  background: var(--searchbar-bg);
+  left: calc(50% - (var(--searchbar-width)/2));
+  border-radius: 4px;
+}
+.searchbar input{
+  box-sizing : border-box;
+  height: 100%;
+  max-width: 100%;
+  background: none;
+  width: calc(var(--searchbar-width) - calc( (var(--searchbar-width)/30)*2 + (var(--navbar-height) - 5vh) ));
+  color: rgba(255,255,255,0.4);
+  border: none;
+  font-size: var(--primary-font-size);
+  padding-left: calc(var(--searchbar-width)/30);
+}
+
+.searchbar .fa-search{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-right: calc(var(--searchbar-width)/30);
+  height:  calc(var(--navbar-height) - 2vh);
+  width: calc(var(--navbar-height) - 5vh);
+  color: rgba(255,255,255, 0.4);
 }
 
 /* Sidenav */
