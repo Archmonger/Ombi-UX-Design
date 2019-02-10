@@ -160,7 +160,7 @@ html {
 .posterContainer {
   margin: 0;
   border-radius: 5px;
-  background: #363636;
+  background: #3f3f3f;
   width: var(--poster-width);
   height: var(--poster-container-height);
   overflow-x: hidden;

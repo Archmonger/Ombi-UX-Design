@@ -23,17 +23,23 @@
       <div class="sidenav" onclick="toggleNav()">
         <div id="navPages" class="navPages">
           <div id="navPages-availablePages" class="navPages-availablePages">
-            <a href="#" class="navPages-page group">Discover</a>
-            <a href="#" class="navPages-page suboption">TV Shows</a>
-            <a href="#" class="navPages-page suboption">Movies</a>
-            <a href="#" class="navPages-page suboption">Music</a>
-            <a href="#" class="navPages-page group">User Options</a>
-            <a href="#" class="navPages-page suboption">View Requests</a>
-            <a href="#" class="navPages-page suboption">Settings</a>
-            <a href="#" class="navPages-page suboption">Log Out</a>
-            <a href="#" class="navPages-page group">Admin</a>
-            <a href="#" class="navPages-page suboption">Mass Email</a>
-            <a href="#" class="navPages-page suboption">Manage Requests</a>
+            <a class="navPages-page group">Discover</a>
+            <div class="hidden discover">
+              <a href="#" class="navPages-page suboption discover">TV Shows</a>
+              <a href="#" class="navPages-page suboption discover">Movies</a>
+              <a href="#" class="navPages-page suboption discover">Music</a>
+            </div>
+            <a class="navPages-page group">User Options</a>
+            <div class="hidden user">
+              <a href="#" class="navPages-page suboption user">View Requests</a>
+              <a href="#" class="navPages-page suboption user">Settings</a>
+              <a href="#" class="navPages-page suboption user">Log Out</a>
+              </div>
+            <div class="hidden admin">
+              <a class="navPages-page group">Admin</a>
+              <a href="#" class="navPages-page suboption admin">Mass Email</a>
+              <a href="#" class="navPages-page suboption admin">Manage Requests</a>
+            </div>
           </div>
         </div>
       </div>
