@@ -29,14 +29,34 @@ html {
 }
 
 .viewport {
+  z-index: 1;
   left: var(--sidenav-width);
   top: var(--navbar-height);
   position: absolute;
   padding: var(--viewport-padding);
 }
 
+/* Navbar */
+.navbar{
+  z-index: 3;
+  width: 100%;
+  background: #3f3f3f;
+  height: var(--navbar-height);
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  filter: var(--sidenav-drop-shadow);
+}
+.logo{
+  height: calc(var(--navbar-height) - 1vh);
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 0.5vw;
+}
+
 /* Sidenav */
 .sidenav {
+  z-index: 2;
   height: 100%;
   width: var(--sidenav-width);
   position: fixed;
@@ -131,6 +151,8 @@ html {
   text-align: center;
   color: #ffffff;
   padding: var(--poster-title-padding) var(--poster-leftright-padding);
+  transition-duration: 5s;
+  transition-timing-function: ease;
 }
 
 .posterContainer-description {
