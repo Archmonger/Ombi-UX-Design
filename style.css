@@ -65,7 +65,7 @@ html {
 .navPages-availablePages a {
   text-decoration: none;
   font-size: var(--primary-font-size);
-  color: #adadad;
+  color: #323232;
   display: block;
   transition: 0.3s;
   white-space: nowrap;
@@ -138,6 +138,5 @@ html {
   font-size: var(--secondary-font-size);
   text-align: center;
   color: rgba(255,255,255,0.5);
-  margin-top: 1px;
   padding: 0px var(--poster-leftright-padding);
 }
