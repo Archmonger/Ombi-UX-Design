@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #FFF;
   --global-font: "Roboto Light";
+  --description-font: "Roboto Thin";
   --sidenav-width: 200px;
   --navbar-height: 60px;
   --poster-width: 120px;
@@ -132,10 +133,10 @@ html {
 }
 
 .posterContainer-description {
-  font-family: var(--global-font);
+  font-family: var(--description-font);
   font-size: var(--secondary-font-size);
   text-align: center;
-  color: #7b7b7b;
+  color: rgba(255,255,255,0.5);
   margin-top: 1px;
   padding: 0px var(--poster-leftright-padding);
 }
