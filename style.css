@@ -2,20 +2,20 @@
   --main-bg-color: #FFF;
   --global-font: "Roboto Light";
   --description-font: "Roboto Thin";
-  --sidenav-width: 19vw;
+  --sidenav-width: 12vw;
   --navbar-height: 7vh;
-  --poster-width: 13vw;
-  --poster-height: calc(13vw * 1.5);
-  --poster-container-height: calc(13vw * 2);
-  --poster-padding: 13px;
-  --viewport-padding: 15px 30px;
-  --navPages-button-padding: 0px 40px 0px 32px;
+  --poster-width: 7vw;
+  --poster-height: calc(var(--poster-width) * 1.5);
+  --poster-container-height: calc(var(--poster-width) * 2.1);
+  --poster-padding: 0.5vw;
+  --viewport-padding: 1.5vh 1.5vw;
+  --navPages-button-padding: 1.25vh 2vw;
   --primary-font-size: 90%;
   --secondary-font-size: 72%;
-  --poster-leftright-padding: 10px;
-  --poster-title-padding: 3px;
-  --tv-indicator-hr: 0.5px solid #f7941d;
-  --movie-indicator-hr: 0.5px solid #0076a3;
+  --poster-leftright-padding: 0.5vw;
+  --poster-title-padding: 0.5vh;
+  --tv-indicator-hr: 1px solid #f7941d;
+  --movie-indicator-hr: 0.1vh solid #0076a3;
   --poster-drop-shadow: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.7));
   --sidenav-drop-shadow: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7));
   --navPages-page-height: 2vh;
@@ -74,7 +74,7 @@ html {
 
 .navPages-page {
   text-overflow: inherit;
-  padding: 1.25vh 2vw;
+  padding: var(--navPages-button-padding);
 }
 
 /* Scrollbar */
