@@ -1,0 +1,140 @@
+:root {
+  --main-bg-color: #FFF;
+  --global-font: "Roboto Light";
+  --sidenav-width: 200px;
+  --navbar-height: 60px;
+  --poster-width: 120px;
+  --poster-height: 175px;
+  --poster-container-height: 250px;
+  --poster-padding: 13px;
+  --viewport-padding: 15px 30px;
+  --navPages-button-padding: 8px 40px 8px 32px;
+  --primary-font-size: 13px;
+  --secondary-font-size: 12px;
+  --poster-leftright-padding: 10px;
+  --poster-title-padding: 3px;
+  --tv-indicator-hr: 0.5px solid orange;
+  --poster-drop-shadow: drop-shadow(0px 0px 1.5px rgba(0, 0, 0, 0.7));
+  --sidenav-drop-shadow: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7));
+}
+
+/* Body */
+html {
+  background-color: var(--main-bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.viewport {
+  left: var(--sidenav-width);
+  top: var(--navbar-height);
+  position: absolute;
+  padding: var(--viewport-padding);
+}
+
+/* Sidenav */
+.sidenav {
+  height: 100%;
+  width: var(--sidenav-width);
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  font-family: var(--global-font);
+  filter: var(--sidenav-drop-shadow);
+}
+
+.sidenav .navPages {
+  white-space: nowrap;
+}
+
+.navPages-availablePages {
+  height: 100%;
+  text-overflow: ellipsis;
+}
+
+.navPages-availablePages a:hover {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+.navPages-availablePages a {
+  padding: var(--navPages-button-padding);
+  text-decoration: none;
+  font-size: var(--primary-font-size);
+  color: #adadad;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navPages-availablePages-page {
+  text-overflow: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+  background: #404040;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #41927b;
+}
+
+.sidenav ::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Posters */
+.posterContainer {
+  margin: 0;
+  border-radius: 5px;
+  background: #363636;
+  width: var(--poster-width);
+  height: var(--poster-container-height);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: inline-block;
+  margin-right: var(--poster-padding);
+  margin-bottom: var(--poster-padding);
+  filter: var(--poster-drop-shadow);
+}
+
+.posterContainer-poster {
+  width: var(--poster-width);
+  height: var(--poster-height);
+  border-bottom: var(--tv-indicator-hr);
+}
+
+.posterContainer:hover {
+  transform: scale(1.08);
+  transition: 0.15s ease;
+}
+
+.posterContainer-title {
+  font-family: var(--global-font);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--primary-font-size);
+  text-align: center;
+  color: #ffffff;
+  padding: var(--poster-title-padding) var(--poster-leftright-padding);
+}
+
+.posterContainer-description {
+  font-family: var(--global-font);
+  font-size: var(--secondary-font-size);
+  text-align: center;
+  color: #7b7b7b;
+  margin-top: 1px;
+  padding: 0px var(--poster-leftright-padding);
+}
