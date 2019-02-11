@@ -1,20 +1,24 @@
 :root {
+  /* Globals */
   --main-bg-color: #FFF;
   --global-font: "Roboto Light";
-  --description-font: "Roboto Thin";
   --primary-font-size: 14px;
   --secondary-font-size: 12px;
-  --viewport-padding: 30px;
+  --box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+  /* Sidenav */
   --sidenav-width: 240px;
-  --sidenav-drop-shadow: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7));
   --navPages-button-padding-group: 15px 20px;
   --navPages-button-padding-suboption: 15.5px 40px;
+  /* Navbar */
   --navbar-height: 55px;
   --navbar-font-color: rgba(255, 255, 255, 0.5);
   --navbar-side-padding: 20px;
   --searchbar-font-color: rgba(255, 255, 255, 0.3);
   --searchbar-bg: #252525;
   --searchbar-width: 25vw;
+  /* Viewport */
+  --viewport-padding: 30px;
+  --description-font: "Roboto Light";
   --poster-width: 150px;
   --poster-height: calc(var(--poster-width) * 1.5);
   --poster-container-height: calc(var(--poster-width) * 2.1);
@@ -58,7 +62,7 @@ body {
   top: 0px;
   left: 0px;
   position: fixed;
-  filter: var(--sidenav-drop-shadow);
+  box-shadow: var(--box-shadow);
 }
 .logo {
   height: calc(var(--navbar-height) * 0.65);
@@ -137,7 +141,7 @@ body {
   background-color: #FFF;
   overflow-x: hidden;
   font-family: var(--global-font);
-  filter: var(--sidenav-drop-shadow);
+  box-shadow: var(--box-shadow);
 }
 .sidenav .navPages {
   white-space: nowrap;
