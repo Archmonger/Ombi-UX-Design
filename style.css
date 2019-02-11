@@ -13,6 +13,7 @@
 
   --navbar-height: 55px;
   --navbar-font-color: rgba(255,255,255,0.5);
+  --navbar-side-padding: 20px;
   --searchbar-font-color: rgba(255,255,255,0.3);
   --searchbar-bg: #252525;
   --searchbar-width: 25vw;
@@ -56,10 +57,10 @@ html {
   filter: var(--sidenav-drop-shadow);
 }
 .logo{
-  height: calc(var(--navbar-height) * 0.8);
-  padding-top: calc(var(--navbar-height) * 0.1);
-  padding-bottom: calc(var(--navbar-height) * 0.1);
-  padding-left: 15px;
+  height: calc(var(--navbar-height) * 0.65);
+  padding-top: calc(var(--navbar-height) * 0.175);
+  padding-bottom: calc(var(--navbar-height) * 0.175);
+  padding-left: var(--navbar-side-padding);
 }
 .searchbar{
   position: fixed;
@@ -103,7 +104,7 @@ html {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding-right: 15px;
+  padding-right: var(--navbar-side-padding);
   font-family: var(--global-font);
   font-size: var(--primary-font-size);
   margin-top: calc( (var(--navbar-height) - 20px) / 2);
