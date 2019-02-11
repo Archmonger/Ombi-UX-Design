@@ -14,8 +14,8 @@
   --navbar-height: 55px;
   --navbar-font-color: rgba(255,255,255,0.5);
   --searchbar-font-color: rgba(255,255,255,0.3);
-  --searchbar-width: 25vw;
   --searchbar-bg: #252525;
+  --searchbar-width: 25vw;
 
   --poster-width: 150px;
   --poster-height: calc(var(--poster-width) * 1.5);
@@ -165,9 +165,13 @@ html {
 .navPages-page.group{
   text-overflow: inherit;
   padding: var(--navPages-button-padding-group);
-  border-bottom: 1px solid rgba(37, 138, 109, 0.15);
-  border-top:  1px solid rgba(37, 138, 109,0.15);
-  /* background: rgba(37, 138, 109); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top:  1px solid rgba(0, 0, 0,0.1);
+}
+
+.navPages-page.group .fa-angle-up{
+  float: right;
+  color: rgba(0,0,0,0.5);
 }
 
 .navPages-page.suboption{
