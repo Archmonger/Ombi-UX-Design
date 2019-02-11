@@ -5,19 +5,16 @@
   --primary-font-size: 14px;
   --secondary-font-size: 12px;
   --viewport-padding: 30px;
-
   --sidenav-width: 240px;
   --sidenav-drop-shadow: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.7));
   --navPages-button-padding-group: 15px 20px;
   --navPages-button-padding-suboption: 15.5px 40px;
-
   --navbar-height: 55px;
-  --navbar-font-color: rgba(255,255,255,0.5);
+  --navbar-font-color: rgba(255, 255, 255, 0.5);
   --navbar-side-padding: 20px;
-  --searchbar-font-color: rgba(255,255,255,0.3);
+  --searchbar-font-color: rgba(255, 255, 255, 0.3);
   --searchbar-bg: #252525;
   --searchbar-width: 25vw;
-
   --poster-width: 150px;
   --poster-height: calc(var(--poster-width) * 1.5);
   --poster-container-height: calc(var(--poster-width) * 2.1);
@@ -39,7 +36,7 @@ html {
   overflow: hidden;
 }
 
-body{
+body {
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -57,7 +54,7 @@ body{
 }
 
 /* Navbar */
-.navbar{
+.navbar {
   z-index: 3;
   width: 100%;
   background: #3f3f3f;
@@ -67,31 +64,34 @@ body{
   position: fixed;
   filter: var(--sidenav-drop-shadow);
 }
-.logo{
+
+.logo {
   height: calc(var(--navbar-height) * 0.65);
   padding-top: calc(var(--navbar-height) * 0.175);
   padding-bottom: calc(var(--navbar-height) * 0.175);
   padding-left: var(--navbar-side-padding);
 }
-.searchbar{
+
+.searchbar {
   position: fixed;
   top: 0px;
   height: calc(var(--navbar-height) * .7);
   margin-top: calc(var(--navbar-height) * .15);
-  margin-bottom:  calc(var(--navbar-height) * .15);
+  margin-bottom: calc(var(--navbar-height) * .15);
   width: var(--searchbar-width);
   background: var(--searchbar-bg);
   left: calc(50% - (var(--searchbar-width)/2));
   border-radius: 4px;
   color: var(--searchbar-font-color);
 }
-.searchbar input{
-  box-sizing : border-box;
+
+.searchbar input {
+  box-sizing: border-box;
   height: 100%;
   max-width: 100%;
   background: none;
   width: var(--searchbar-width);
-  padding-right: calc(  (var(--navbar-height) * .30)  + 30px  );
+  padding-right: calc((var(--navbar-height) * .30) + 30px);
   color: inherit;
   border: none;
   font-size: var(--primary-font-size);
@@ -99,30 +99,31 @@ body{
   outline: none !important;
 }
 
-.searchbar .fa-search{
+.searchbar .fa-search {
   position: absolute;
   top: 0px;
   right: 0px;
   padding-right: 15px;
   margin-top: calc((var(--navbar-height) * .40) / 2);
   margin-bottom: calc((var(--navbar-height) * .30) / 2);
-  height:  calc(var(--navbar-height) * .30);
+  height: calc(var(--navbar-height) * .30);
   width: calc(var(--navbar-height) * .30);
   color: inherit;
 }
 
-.username-container{
+.username-container {
   position: absolute;
   top: 0px;
   right: 0px;
   padding-right: var(--navbar-side-padding);
   font-family: var(--global-font);
   font-size: var(--primary-font-size);
-  margin-top: calc( (var(--navbar-height) - 20px) / 2);
-  margin-bottom: calc( (var(--navbar-height) - 20px) / 2);
+  margin-top: calc((var(--navbar-height) - 20px) / 2);
+  margin-bottom: calc((var(--navbar-height) - 20px) / 2);
   color: var(--navbar-font-color);
 }
-.username-container .username{
+
+.username-container .username {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
@@ -130,7 +131,8 @@ body{
   display: inline;
   margin-right: 1px;
 }
-.username-container .fas{
+
+.username-container .fas {
   color: inherit;
   font-size: inherit;
   display: inline;
@@ -174,19 +176,19 @@ body{
   overflow: hidden;
 }
 
-.navPages-page.group{
+.navPages-page.group {
   text-overflow: inherit;
   padding: var(--navPages-button-padding-group);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top:  1px solid rgba(0, 0, 0,0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.navPages-page.group .fa-angle-up{
+.navPages-page.group .fa-angle-up {
   float: right;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.navPages-page.suboption{
+.navPages-page.suboption {
   padding: var(--navPages-button-padding-suboption);
 }
 
@@ -234,18 +236,18 @@ body{
   font-family: var(--description-font);
   font-size: var(--secondary-font-size);
   text-align: center;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   padding: 0px var(--poster-leftright-padding);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb {
