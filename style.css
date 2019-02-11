@@ -151,11 +151,11 @@ body {
   height: 100%;
   text-overflow: ellipsis;
 }
-.navPages-availablePages a.suboption:hover, .navPages-availablePages a.suboption.active {
+.navPages-availablePages .suboption:hover, .navPages-availablePages .suboption.active {
   color: #ffffff;
   background-color: #258a6d;
 }
-.navPages-availablePages a {
+.navPages-availablePages .navPages-page {
   text-decoration: none;
   font-size: var(--primary-font-size);
   color: var(--navPages-font-color);
