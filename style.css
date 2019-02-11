@@ -26,7 +26,6 @@
   --tv-indicator-hr: 1px solid #f7941d;
   --movie-indicator-hr: 1px solid #0076a3;
 }
-
 /* Body */
 html {
   background-color: var(--main-bg-color);
@@ -35,7 +34,6 @@ html {
   height: 100%;
   overflow: hidden;
 }
-
 body {
   margin: 0px;
   padding: 0px;
@@ -44,7 +42,6 @@ body {
   box-sizing: content-box;
   position: relative;
 }
-
 .viewport {
   z-index: 1;
   left: var(--sidenav-width);
@@ -52,7 +49,6 @@ body {
   position: absolute;
   padding: var(--viewport-padding);
 }
-
 /* Navbar */
 .navbar {
   z-index: 3;
@@ -64,14 +60,12 @@ body {
   position: fixed;
   filter: var(--sidenav-drop-shadow);
 }
-
 .logo {
   height: calc(var(--navbar-height) * 0.65);
   padding-top: calc(var(--navbar-height) * 0.175);
   padding-bottom: calc(var(--navbar-height) * 0.175);
   padding-left: var(--navbar-side-padding);
 }
-
 .searchbar {
   position: fixed;
   top: 0px;
@@ -84,7 +78,6 @@ body {
   border-radius: 4px;
   color: var(--searchbar-font-color);
 }
-
 .searchbar input {
   box-sizing: border-box;
   height: 100%;
@@ -98,7 +91,6 @@ body {
   padding-left: 15px;
   outline: none !important;
 }
-
 .searchbar .fa-search {
   position: absolute;
   top: 0px;
@@ -110,7 +102,6 @@ body {
   width: calc(var(--navbar-height) * .30);
   color: inherit;
 }
-
 .username-container {
   position: absolute;
   top: 0px;
@@ -122,7 +113,6 @@ body {
   margin-bottom: calc((var(--navbar-height) - 20px) / 2);
   color: var(--navbar-font-color);
 }
-
 .username-container .username {
   color: inherit;
   font-size: inherit;
@@ -131,13 +121,11 @@ body {
   display: inline;
   margin-right: 1px;
 }
-
 .username-container .fas {
   color: inherit;
   font-size: inherit;
   display: inline;
 }
-
 /* Sidenav */
 .sidenav {
   z-index: 2;
@@ -151,21 +139,17 @@ body {
   font-family: var(--global-font);
   filter: var(--sidenav-drop-shadow);
 }
-
 .sidenav .navPages {
   white-space: nowrap;
 }
-
 .navPages-availablePages {
   height: 100%;
   text-overflow: ellipsis;
 }
-
 .navPages-availablePages a.suboption:hover, .navPages-availablePages a.suboption.active {
   color: #ffffff;
   background-color: #258a6d;
 }
-
 .navPages-availablePages a {
   text-decoration: none;
   font-size: var(--primary-font-size);
@@ -175,23 +159,19 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
-
 .navPages-page.group {
   text-overflow: inherit;
   padding: var(--navPages-button-padding-group);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .navPages-page.group .fa-angle-up {
   float: right;
   color: rgba(0, 0, 0, 0.5);
 }
-
 .navPages-page.suboption {
   padding: var(--navPages-button-padding-suboption);
 }
-
 /* Posters */
 .posterContainer {
   margin: 0;
@@ -206,18 +186,15 @@ body {
   margin-bottom: var(--poster-padding);
   filter: var(--poster-drop-shadow);
 }
-
 .posterContainer-poster {
   width: var(--poster-width);
   height: var(--poster-height);
   border-bottom: var(--tv-indicator-hr);
 }
-
 .posterContainer:hover {
   transform: scale(1.05);
   transition: 0.15s ease;
 }
-
 .posterContainer-title {
   font-family: var(--global-font);
   white-space: nowrap;
@@ -231,7 +208,6 @@ body {
   transition-timing-function: ease;
   text-align: left;
 }
-
 .posterContainer-description {
   font-family: var(--description-font);
   font-size: var(--secondary-font-size);
@@ -239,22 +215,18 @@ body {
   color: rgba(255, 255, 255, 0.4);
   padding: 0px var(--poster-leftright-padding);
 }
-
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
   background: rgba(0, 0, 0, 0);
 }
-
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background: #41927b;
 }
-
 .sidenav ::-webkit-scrollbar-track {
   display: none;
 }
