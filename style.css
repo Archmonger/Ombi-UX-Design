@@ -197,7 +197,6 @@ body {
 }
 .posterContainer:hover {
   transform: scale(1.05);
-  transition: 0.15s ease;
 }
 .posterContainer-title {
   font-family: var(--global-font);
@@ -208,8 +207,6 @@ body {
   text-align: center;
   color: #ffffff;
   padding: var(--poster-title-padding) var(--poster-leftright-padding);
-  transition-duration: 5s;
-  transition-timing-function: ease;
   text-align: left;
 }
 .posterContainer-description {
