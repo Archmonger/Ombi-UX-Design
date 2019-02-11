@@ -191,6 +191,7 @@ body {
   margin-right: var(--poster-padding);
   margin-bottom: var(--poster-padding);
   box-shadow: var(--poster-box-shadow);
+  transition: all 0.15s ease-in-out;
 }
 .posterContainer-poster {
   width: var(--poster-width);
