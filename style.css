@@ -27,8 +27,8 @@
   --poster-padding: 10px;
   --poster-title-font-size: 16px;
   --poster-leftright-padding: 10px;
-  --poster-title-top-padding: 5px;
-  --poster-title-bottom-padding: 2px;
+  --poster-title-top-padding: 4px;
+  --poster-title-bottom-padding: 5px;
   --poster-box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
   --availabity-dot-green: #39b54a;
   --tv-indicator-hr: 1px solid #f7941d;
@@ -129,7 +129,7 @@ body {
   display: inline;
   margin-right: 1px;
 }
-.username-container .fas {
+.username-container .fa-caret-down {
   color: inherit;
   font-size: inherit;
   display: inline;
@@ -213,8 +213,8 @@ body {
   color: #ffffff;
   padding: var(--poster-title-top-padding) var(--poster-leftright-padding) var(--poster-title-bottom-padding) var(--poster-leftright-padding);
   text-align: left;
-  width: calc(var(--poster-width) - 25px);
-  display: inline-block;
+  width: 100%;
+  display: block;
 }
 .posterContainer-description {
   font-family: var(--description-font);
@@ -230,7 +230,17 @@ body {
   position: absolute;
   top: var(--poster-height);
   left: 0px;
-  z-index: 9999;
+  z-index: 4;
+}
+.posterContainer .fa-angle-down {
+  position: absolute;
+  bottom: 0px;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 5;
+  vertical-align: middle;
+  width: var(--poster-width);
+  margin: 2px;
+  font-size: 18px;
 }
 .posterContainer .fa-ellipsis-v {
   position: absolute;
@@ -251,9 +261,11 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  float: right;
   display: inline-block;
-  transform: translate(-7px, 3px);
+  position: absolute;
+  top: var(--poster-height);
+  right: 0px;
+  margin: 7px 6px;
 }
 .availablity-dot.green {
   background-color: var(--availabity-dot-green);
