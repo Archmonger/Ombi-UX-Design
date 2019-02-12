@@ -30,6 +30,7 @@
   --poster-title-top-padding: 5px;
   --poster-title-bottom-padding: 2px;
   --poster-box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
+  --availabity-dot-green: #39b54a;
   --tv-indicator-hr: 1px solid #f7941d;
   --movie-indicator-hr: 1px solid #0076a3;
 }
@@ -240,7 +241,7 @@ body {
   transform: translate(-7px, 3px);
 }
 .availablity-dot.green {
-  background-color: #39b54a;
+  background-color: var(--availabity-dot-green);
 }
 /* Scrollbar */
 ::-webkit-scrollbar {
