@@ -232,6 +232,23 @@ body {
   left: 0px;
   z-index: 9999;
 }
+.posterContainer .fa-ellipsis-v {
+  position: absolute;
+  margin-top: 8px;
+  margin-right: 9px;
+  right: 0px;
+  top: 0px;
+  color: #FFF;
+  font-size: 20px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.posterContainer .fa-ellipsis-v {
+  opacity: 0;
+}
+.posterContainer:hover .fa-ellipsis-v {
+  opacity: 0.75;
+}
 .availablity-dot {
   width: 4px;
   height: 4px;
