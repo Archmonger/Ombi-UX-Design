@@ -20,6 +20,7 @@
   /* Viewport */
   --viewport-padding: 30px;
   --description-font: "Roboto Light";
+  --poster-bg-color: #3f3f3f;
   --poster-width: 150px;
   --poster-height: calc(var(--poster-width) * 1.5);
   --poster-container-height: calc(var(--poster-width) * 2.1);
@@ -182,7 +183,7 @@ body {
 .posterContainer {
   margin: 0;
   border-radius: 5px;
-  background: #3f3f3f;
+  background: var(--poster-bg-color);
   width: var(--poster-width);
   height: var(--poster-container-height);
   overflow-x: hidden;
@@ -192,6 +193,7 @@ body {
   margin-bottom: var(--poster-padding);
   box-shadow: var(--poster-box-shadow);
   transition: all 0.15s ease-in-out;
+  position: relative;
 }
 .posterContainer-poster {
   width: var(--poster-width);
@@ -219,6 +221,15 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
   padding: 0px var(--poster-leftright-padding);
+}
+.poster-tint {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), var(--poster-bg-color));
+  height: calc(var(--poster-container-height) - var(--poster-height));
+  width: var(--poster-width);
+  position: absolute;
+  top: var(--poster-height);
+  left: 0px;
+  z-index: 9999;
 }
 .availablity-dot {
   width: 4px;
