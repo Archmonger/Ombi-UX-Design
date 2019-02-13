@@ -120,6 +120,11 @@ body {
   margin-top: calc((var(--navbar-height) - 20px) / 2);
   margin-bottom: calc((var(--navbar-height) - 20px) / 2);
   color: var(--navbar-font-color);
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+.username-container:hover {
+  color: #FFF;
 }
 .username-container .username {
   color: inherit;
