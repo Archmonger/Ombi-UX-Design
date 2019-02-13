@@ -26,8 +26,8 @@
   --poster-height: calc(var(--poster-width) * 1.5);
   --poster-container-height: calc(var(--poster-width) * 2.1);
   --poster-padding: 10px;
-  --poster-title-font-size: 16px;
   --poster-leftright-padding: 10px;
+  --poster-title-font-size: 16px;
   --poster-title-top-padding: 4px;
   --poster-title-bottom-padding: 5px;
   --poster-box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
@@ -35,8 +35,8 @@
   --tv-indicator-hr: 1px solid #0076a3;
   --movie-indicator-hr: 1px solid #b66707;
   /* Modal */
-  --modal-height: 380px;
   --modal-width: 780px;
+  --modal-height: 380px;
   --modal-poster-width: 220px;
   --modal-poster-height: calc(var(--modal-poster-width) * 1.5);
 }
