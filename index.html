@@ -18,21 +18,50 @@
       <div class="aquaman modal-tint">
         <div class="aquaman modal">
           <div class="modal-fa-holder">
-            <i class="fas fa-window-close"></i>
+            <i class="fas fa-window-close" onclick="hideModal()"></i>
             <i class="fas fa-expand"></i>
           </div>
           <img class="aquaman modal-poster" src="./images/aquaman-poster.jpg" alt="">
           <div class="aquaman modal-title">Aquaman</div>
           <div class="aquaman modal-info">
             <div class="aquaman modal-info-text-left">
+              <div class="info-block">
+                <div class="info info-bold"> Availabity: <div class="info">Unavailable <div class="modal-dot red">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Request Status: <div class="info">Unrequested <div class="modal-dot red">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Content Type: <div class="info"> Movie</div>
+                </div>
+              </div>
             </div>
             <div class="aquaman modal-info-text-right">
+              <div class="info-block">
+                <div class="info info-bold"> In Cinemas: <div class="info">December 2018 </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Genres: <div class="info">Fantasy, Adventure </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Score: <div class="info">6.3 / 10 </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="aquaman modal-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the
             remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary
             Trident of Atlan and embrace his destiny as protector of the deep. </div>
-          <div class="aquaman modal-request-button">
+          <div class="modal-request-button-container">
+            <div class="aquaman modal-request-button"><i class="fas fa-plus"></i> REQUEST</div>
           </div>
         </div>
       </div>
@@ -77,7 +106,7 @@
         <div class="home-posterContainer posterContainer">
           <i class="fas fa-ellipsis-v"></i>
           <i class="fas fa-angle-down"></i>
-          <div class="poster-tint"></div>
+          <div class="poster-tint" onclick="showAquamanModal()"></div>
           <img src="./images/aquaman-poster.jpg" class="posterContainer-poster poster-movie">
           <div class="posterContainer-title">Aquaman</div>
           <div class="availablity-dot green"></div>
