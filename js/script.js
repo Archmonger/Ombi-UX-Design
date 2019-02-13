@@ -1,7 +1,7 @@
-function showModal() {
-	$(".fa-ellipsis-v").css("color", "#FFF");
+function showAquamanModal() {
+	$(".modal-tint.aquamman").css("color", "#FFF");
 }
 
-function hideModal() {
-	$(".fa-ellipsis-v").css("color", "#FFF");
+function hideAquamanModal() {
+	$(".modal-tint.aquamman").css("color", "#FFF");
 }
