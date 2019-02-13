@@ -247,7 +247,7 @@ body {
 .posterContainer .fa-angle-down {
   position: absolute;
   bottom: 0px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
   z-index: 5;
   vertical-align: middle;
   width: var(--poster-width);
