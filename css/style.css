@@ -56,6 +56,7 @@ body {
   top: var(--navbar-height);
   position: absolute;
   padding: var(--viewport-padding);
+  transition: all 1s ease;
 }
 /* Navbar */
 .navbar {
