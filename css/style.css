@@ -34,6 +34,22 @@
   --availabity-dot-green: #39b54a;
   --tv-indicator-hr: 1px solid #0076a3;
   --movie-indicator-hr: 1px solid #f7941d;
+  --modal-height: 500px;
+}
+/* Modal */
+.modal-tint {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 6;
+}
+.modal {
+  width: 400px;
+  height: 500px;
+  z-index: 7;
+  margin: calc((100vh - var(--modal-height))/2) auto;
+  background: var(--navbar-bg);
 }
 /* Body */
 html {
