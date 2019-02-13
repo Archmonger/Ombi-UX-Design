@@ -11,6 +11,7 @@
   --navpages-button-padding-suboption: 15.5px 40px;
   --navpages-font-color: #323232;
   /* Navbar */
+  --navbar-bg: #3f3f3f;
   --navbar-height: 55px;
   --navbar-font-color: rgba(255, 255, 255, 0.5);
   --navbar-side-padding: 20px;
@@ -62,7 +63,7 @@ body {
 .navbar {
   z-index: 3;
   width: 100%;
-  background: #3f3f3f;
+  background: var(--navbar-bg);
   height: var(--navbar-height);
   top: 0px;
   left: 0px;
@@ -211,22 +212,29 @@ body {
 .posterContainer-poster {
   width: var(--poster-width);
   height: var(--poster-height);
+}
+.posterContainer-poster.poster-tv {
   border-bottom: var(--tv-indicator-hr);
+}
+.posterContainer-poster.poster-movie {
+  border-bottom: var(--movie-indicator-hr);
 }
 .posterContainer:hover {
   transform: scale(1.05);
 }
 .posterContainer-title {
   font-family: var(--global-font);
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: var(--poster-title-font-size);
+  line-height: calc(var(--poster-title-font-size) + 2);
+  max-height: 36px;
   color: #ffffff;
   padding: var(--poster-title-top-padding) var(--poster-leftright-padding) var(--poster-title-bottom-padding) var(--poster-leftright-padding);
   text-align: left;
   width: 100%;
   display: block;
+  width: calc(var(--poster-width) - 10px);
 }
 .posterContainer-description {
   font-family: var(--description-font);
