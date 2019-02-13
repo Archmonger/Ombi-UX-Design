@@ -264,8 +264,7 @@ body {
 }
 .posterContainer .fa-ellipsis-v {
   position: absolute;
-  margin-top: 8px;
-  margin-right: 9px;
+  padding: 8px 9px;
   right: 0px;
   top: 0px;
   color: #FFF;
