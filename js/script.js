@@ -1,7 +1,7 @@
 function showModal() {
-	$(".fa-ellipsis-v").css("color", "#FFF");
+	$(".modal-tint").css("display", "block");
 }
 
 function hideModal() {
-	$(".fa-ellipsis-v").css("color", "#FFF");
+	$(".modal-tint").css("display", "none");
 }
