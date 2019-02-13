@@ -84,7 +84,13 @@ body {
   background: var(--searchbar-bg);
   left: calc(50% - (var(--searchbar-width)/2));
   border-radius: 4px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   color: var(--searchbar-font-color);
+}
+.searchbar:focus-within {
+  background: #FFF;
+  color: var(--searchbar-bg);
 }
 .searchbar input {
   box-sizing: border-box;
