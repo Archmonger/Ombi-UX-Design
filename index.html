@@ -16,15 +16,15 @@
   <body>
     <div class="main">
       <div class="aquaman modal-tint">
-        <div class="aquaman modal">
+        <div class="modal">
           <div class="modal-fa-holder">
             <i class="fas fa-window-close" onclick="hideModal()"></i>
             <i class="fas fa-expand"></i>
           </div>
-          <img class="aquaman modal-poster" src="./images/aquaman-poster.jpg" alt="">
-          <div class="aquaman modal-title">Aquaman</div>
-          <div class="aquaman modal-info">
-            <div class="aquaman modal-info-text-left">
+          <img class="modal-poster" src="./images/aquaman-poster.jpg" alt="">
+          <div class="modal-title">Aquaman</div>
+          <div class="modal-info">
+            <div class="modal-info-text-left">
               <div class="info-block">
                 <div class="info info-bold"> Availabity: <div class="info">Unavailable <div class="modal-dot red">
                     </div>
@@ -42,7 +42,7 @@
                 </div>
               </div>
             </div>
-            <div class="aquaman modal-info-text-right">
+            <div class="modal-info-text-right">
               <div class="info-block">
                 <div class="info info-bold"> In Cinemas: <div class="info">December 2018 </div>
                 </div>
@@ -57,11 +57,62 @@
               </div>
             </div>
           </div>
-          <div class="aquaman modal-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the
-            remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary
-            Trident of Atlan and embrace his destiny as protector of the deep. </div>
+          <div class="modal-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining
+            oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, must retrieve the legendary Trident of Atlan and
+            embrace his destiny as protector of the deep. </div>
           <div class="modal-request-button-container">
-            <div class="aquaman modal-request-button"><i class="fas fa-plus"></i> REQUEST</div>
+            <div class="modal-request-button"><i class="fas fa-plus"></i> REQUEST</div>
+          </div>
+        </div>
+      </div>
+      <div class="flash modal-tint">
+        <div class="modal">
+          <div class="modal-fa-holder">
+            <i class="fas fa-window-close" onclick="hideModal()"></i>
+            <i class="fas fa-expand"></i>
+          </div>
+          <img class="modal-poster" src="./images/flash-poster.jpg" alt="">
+          <div class="modal-title">The Flash (2018)</div>
+          <div class="modal-info">
+            <div class="modal-info-text-left">
+              <div class="info-block">
+                <div class="info info-bold"> Availabity: <div class="info">Unavailable <div class="modal-dot red">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Request Status: <div class="info">Requested <div class="modal-dot green">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Content Type: <div class="info"> TV Show</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-info-text-right">
+              <div class="info-block">
+                <div class="info info-bold"> Premerie: <div class="info">October 2014 </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Genres: <div class="info">Drama, Sci-Fi & Fantasy </div>
+                </div>
+              </div>
+              <div class="info-block">
+                <div class="info info-bold"> Score: <div class="info">6.7 / 10 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-description">After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to
+            move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only "meta-human" who was created in the wake of the accelerator explosion -- and not
+            everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it
+            won't be long before the world learns what Barry Allen has become...The Flash.</div>
+          <div class="modal-request-button-container">
+            <div class="modal-request-button"><i class="fas fa-plus"></i> REQUEST</div>
           </div>
         </div>
       </div>
@@ -109,7 +160,7 @@
           <div class="poster-tint" onclick="showAquamanModal()"></div>
           <img src="./images/aquaman-poster.jpg" class="posterContainer-poster poster-movie">
           <div class="posterContainer-title">Aquaman</div>
-          <div class="availablity-dot green"></div>
+          <div class="availablity-dot red"></div>
           <div class="posterContainer-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the
             remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary
             Trident of Atlan and embrace his destiny as protector of the deep.</div>
@@ -117,10 +168,10 @@
         <div class="home-posterContainer posterContainer">
           <i class="fas fa-ellipsis-v"></i>
           <i class="fas fa-angle-down"></i>
-          <div class="poster-tint"></div>
+          <div class="poster-tint" onclick="showFlashModal()"></div>
           <img src="./images/flash-poster.jpg" class="posterContainer-poster poster-tv">
           <div class="posterContainer-title">The Flash (2014)</div>
-          <div class="availablity-dot green"></div>
+          <div class="availablity-dot yellow"></div>
           <div class="posterContainer-description">After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.</div>
         </div>
         <div class="home-posterContainer posterContainer">
