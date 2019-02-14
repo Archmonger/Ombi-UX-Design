@@ -6,6 +6,16 @@ function showFlashModal() {
 	$(".flash.modal-tint").css("display", "block");
 }
 
+function showKiiaraModal() {
+	$(".kiiara.modal-tint").css("display", "block");
+}
+
+function kiiaraModalRequestedBtn() {
+	$(".modal-request-button.kiiara i").css("display", "none");
+	$(".modal-request-button.kiiara").text("REQUESTED");
+	$(".modal-request-button.kiiara").css("background", "#cc7b19");
+}
+
 function flashModalRequestedBtn() {
 	$(".modal-request-button.flash i").css("display", "none");
 	$(".modal-request-button.flash").text("REQUESTED");

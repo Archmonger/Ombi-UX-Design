@@ -165,6 +165,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.modal-description-music {
+  grid-row: 3 / 5;
+  max-height: 215px;
+  min-height: 215px;
+  padding: 7px 0px;
+  box-sizing: border-box;
+  background: var(--searchbar-bg);
+  border-radius: 5px;
+}
 .modal-request-button-container {
   grid-row: 5;
   grid-column: 2;
