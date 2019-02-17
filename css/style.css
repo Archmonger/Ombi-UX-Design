@@ -118,12 +118,12 @@
   display: inline;
   color: rgba(255, 255, 255, 0.75);
   font-family: var(--global-font);
-  font-weight: 400;
+  font-weight: 300;
 }
 .info-bold {
   font-weight: bold;
   font-family: var(--global-font);
-  font-weight: 400;
+  font-weight: 700;
 }
 .modal-info-text-left {
   display: grid;
