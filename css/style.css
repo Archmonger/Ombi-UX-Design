@@ -143,15 +143,6 @@
   margin-left: 2px;
   margin-bottom: 3px;
 }
-.red {
-  background-color: var(--red-dot);
-}
-.green {
-  background-color: var(--green-dot);
-}
-.yellow {
-  background-color: var(--yellow-dot);
-}
 .modal-description {
   display: grid;
   font-family: var(--global-font);
@@ -170,10 +161,10 @@
   grid-row: 3 / 5;
   max-height: 215px;
   min-height: 215px;
-  padding: 7px 0px;
   box-sizing: border-box;
   background: var(--searchbar-bg);
   border-radius: 5px;
+  display: block;
 }
 .modal-request-button-container {
   grid-row: 5;
@@ -199,6 +190,31 @@
 .modal-request-button:hover {
   background: #2ba180;
 }
+.modal-music-listing {
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-template-columns: 80px 140px auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.modal-music-listing:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+.modal-music-listing:first-child {
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.modal-music-listing-num {
+  grid-column: 1;
+}
+.modal-music-listing-artist {
+  grid-column: 2;
+}
+.modal-music-listing-name {
+  grid-column: 3;
+}
 /* Body */
 html {
   background-color: var(--main-bg-color);
@@ -223,6 +239,18 @@ body {
   position: absolute;
   padding: var(--viewport-padding);
   transition: all 1s ease;
+}
+.bold {
+  font-weight: 700;
+}
+.red {
+  background-color: var(--red-dot);
+}
+.green {
+  background-color: var(--green-dot);
+}
+.yellow {
+  background-color: var(--yellow-dot);
 }
 /* Navbar */
 .navbar {
