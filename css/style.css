@@ -73,6 +73,13 @@
   grid-row: 1 / 4;
   grid-column: 1;
 }
+.modal-poster-music {
+  background: linear-gradient(135deg, #4c5961, #161d21);
+}
+.modal-poster-music-album {
+  width: 100%;
+  margin: calc((var(--modal-poster-height) - var(--modal-poster-width)) /2) 0px;
+}
 .modal-title {
   display: grid;
   color: #FFF;
