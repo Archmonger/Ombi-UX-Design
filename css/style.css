@@ -28,7 +28,7 @@
   --poster-padding: 10px;
   --poster-leftright-padding: 10px;
   --poster-title-font-size: 16px;
-  --poster-title-top-padding: 4px;
+  --poster-title-top-padding: 7px;
   --poster-title-bottom-padding: 5px;
   --poster-box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
   --green-dot: #39b54a;
@@ -379,6 +379,7 @@ body {
 .posterContainer-poster {
   width: var(--poster-width);
   height: var(--poster-height);
+  display: block;
 }
 .posterContainer-poster.poster-tv {
   border-bottom: var(--tv-indicator-hr);
@@ -389,6 +390,7 @@ body {
 .posterContainer-poster.poster-music {
   height: var(--poster-width);
   margin: calc((var(--poster-height) - var(--poster-width)) / 2) 0px;
+  display: inline;
 }
 .posterContainer-poster.poster-music-container {
   border-bottom: var(--music-indicator-hr);
