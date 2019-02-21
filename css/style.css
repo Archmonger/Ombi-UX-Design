@@ -252,7 +252,7 @@ body {
 }
 .posterContainer-poster.poster-music-container {
   border-bottom: var(--music-indicator-hr);
-  background: linear-gradient(135deg, #626d73, #161d21);
+  background: linear-gradient(135deg, var(--accent-color), #161d21);
 }
 .posterContainer:hover {
   transform: scale(1.05);
@@ -355,7 +355,7 @@ body {
   grid-column: 1;
 }
 .modal-poster-music {
-  background: linear-gradient(135deg, #4c5961, #161d21);
+  background: linear-gradient(135deg, var(--accent-color), #161d21);
 }
 .modal-poster-music-album {
   width: 100%;
