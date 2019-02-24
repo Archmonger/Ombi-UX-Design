@@ -387,20 +387,15 @@ body {
 .episode-block {
   padding: 7px 15px;
   display: grid;
-  grid-template-columns: 30px 20px 70px auto;
+  grid-template-columns: 30px 30px auto;
   color: rgba(255, 255, 255, 0.5);
 }
 .episode-block input {
   grid-column: 2;
 }
-.episode-block .episode-num {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  grid-column: 3;
-}
 .episode-block .episode {
   color: rgba(255, 255, 255, 0.5);
-  grid-column: 4;
+  grid-column: 3;
 }
 .season-block {
   padding: 15px 15px;
