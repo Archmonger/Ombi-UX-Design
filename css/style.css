@@ -328,7 +328,7 @@ body {
 }
 /* Modal */
 .modal-no-tint {
-  display: block;
+  display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0.0);
   height: 100%;
