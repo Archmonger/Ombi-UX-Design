@@ -1,13 +1,12 @@
 :root {
   /* Globals */
-  --body-bg: #F5F5F5;
+  --main-bg-color: #FFF;
   --global-font: 'Roboto', sans-serif;
   --primary-font-size: 14px;
   --secondary-font-size: 12px;
   --box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
   --accent-color: #258a6d;
   /* Sidenav */
-  --sidenav-bg: #E0E0E0;
   --sidenav-width: 240px;
   --navpages-button-padding-group: 15px 20px;
   --navpages-button-padding-suboption: 15.5px 40px;
@@ -48,6 +47,7 @@
 }
 /* Body */
 html {
+  background-color: var(--main-bg-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -55,7 +55,6 @@ html {
   font-family: var(--global-font);
 }
 body {
-  background-color: var(--body-bg);
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -180,7 +179,7 @@ body {
   position: fixed;
   top: var(--navbar-height);
   left: 0;
-  background-color: var(--sidenav-bg);
+  background-color: #FFF;
   overflow-x: hidden;
   font-family: var(--global-font);
   font-weight: 300;
