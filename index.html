@@ -17,6 +17,105 @@
   <body>
     <div class="main">
       <div class="preview-modals">
+        <div class="modal-no-tint">
+          <div class="modal">
+            <div class="modal-fa-holder">
+              <i class="fas fa-window-close" onclick="hideEpisodeModal()"></i>
+            </div>
+            <div class="modal-seasons-container">
+              <div class="season-block">
+                <input type="checkbox">
+                <div class="season">
+                  <div class="modal-dot red"></div> Season 1 - "The Return of the Flash"
+                </div>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E01 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> Pilot
+                </div>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E02 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> Fastest Man Alive
+                </div>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E03 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> Things You Can't Outrun
+                </div>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E04 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> Going Rogue
+                </div>
+              </div>
+              <div class="season-block">
+                <input type="checkbox">
+                <div class="season">
+                  <div class="modal-dot yellow"></div> Season 2 - "Finding the Lost Pontifex"
+                </div>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <div class="episode-block">
+                <div class="episode-num"> E01 </div>
+                <div class="episode">
+                  <div class="modal-dot green"></div> The Man Who Saved Central City
+                </div>
+              </div>
+              <div class="episode-block">
+                <div class="episode-num"> E02 </div>
+                <div class="episode">
+                  <div class="modal-dot yellow"></div> Flash of Two Worlds
+                </div>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E03 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> Family of Rogues
+                </div>
+              </div>
+              <div class="episode-block">
+                <input type="checkbox">
+                <div class="episode-num"> E04 </div>
+                <div class="episode">
+                  <div class="modal-dot red"></div> The Fury of Firestorm
+                </div>
+              </div>
+              <div class="season-block">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 3 - "Faster Than Lightning"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="season-block">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 4 - "Can't Look Back"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="season-block">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 5 - "Roadblocks"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="modal-request-button-container">
+              <div class="modal-confirm-button flash" onclick="flashModalConfirmedBtn()">CONFIRM</div>
+              <div class="modal-select-button flash" onclick="flashModalSelectedBtn()">SELECT ALL</div>
+            </div>
+          </div>
+        </div>
         <div class="aquaman modal-tint">
           <div class="modal">
             <div class="modal-fa-holder">
@@ -113,7 +212,7 @@
               to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only "meta-human" who was created in the wake of the accelerator explosion -- and
               not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to...</div>
             <div class="modal-request-button-container">
-              <div class="modal-request-button flash" onclick="flashModalRequestedBtn()"><i class="fas fa-plus"></i> REQUEST</div>
+              <div class="modal-request-button flash" onclick="showFlashEpisodeModal()"><i class="fas fa-plus"></i> REQUEST</div>
             </div>
           </div>
         </div>
