@@ -492,6 +492,12 @@ body {
   grid-column: 2;
   grid-row: 1;
 }
+.modal-fa-holder .fa-play {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  margin: 15px 16px;
+  float: right;
+}
 .modal-fa-holder .fa-expand {
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
