@@ -507,7 +507,7 @@ body {
   margin-right: 22px;
   float: right;
 }
-.modal-fa-holder .fa-expand:hover, .modal-fa-holder .fa-window-close:hover {
+.modal-fa-holder .fa-expand:hover, .modal-fa-holder .fa-window-close:hover, .modal-fa-holder .fa-play:hover {
   color: #FFF;
 }
 .modal-info {
