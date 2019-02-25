@@ -5,14 +5,14 @@ function hideDiscover() {
 		$(".navpages-page.group.discover").css("border-bottom-color", "rgba(0,0,0,0)");
 		$(".hidden.discover").css("max-height", "0px");
 		hide_discover = 1;
-		document.getElementById("discover-fa").classList.remove('fa-angle-down');
-		document.getElementById("discover-fa").classList.add('fa-angle-up');
+		document.getElementById("discover-fa").classList.remove('fa-angle-up');
+		document.getElementById("discover-fa").classList.add('fa-angle-down');
 	} else {
 		$(".navpages-page.group.discover").css("border-bottom-color", "rgba(0, 0, 0, 0.1)");
 		$(".hidden.discover").css("max-height", "1000px");
 		hide_discover = 0;
-		document.getElementById("discover-fa").classList.remove('fa-angle-up');
-		document.getElementById("discover-fa").classList.add('fa-angle-down');
+		document.getElementById("discover-fa").classList.remove('fa-angle-down');
+		document.getElementById("discover-fa").classList.add('fa-angle-up');
 	}
 }
 
@@ -23,14 +23,14 @@ function hideUser() {
 		$(".navpages-page.group.user").css("border-bottom-color", "rgba(0,0,0,0)");
 		$(".hidden.user").css("max-height", "0px");
 		hide_user = 1;
-		document.getElementById("user-fa").classList.remove('fa-angle-down');
-		document.getElementById("user-fa").classList.add('fa-angle-up');
+		document.getElementById("user-fa").classList.remove('fa-angle-up');
+		document.getElementById("user-fa").classList.add('fa-angle-down');
 	} else {
 		$(".navpages-page.group.user").css("border-bottom-color", "rgba(0, 0, 0, 0.1)");
 		$(".hidden.user").css("max-height", "1000px");
 		hide_user = 0;
-		document.getElementById("user-fa").classList.remove('fa-angle-up');
-		document.getElementById("user-fa").classList.add('fa-angle-down');
+		document.getElementById("user-fa").classList.remove('fa-angle-down');
+		document.getElementById("user-fa").classList.add('fa-angle-up');
 	}
 }
 
@@ -40,13 +40,13 @@ function hideAdmin() {
 	if (hide_admin == 0) {
 		$(".hidden.admin").css("max-height", "0px");
 		hide_admin = 1;
-		document.getElementById("admin-fa").classList.remove('fa-angle-down');
-		document.getElementById("admin-fa").classList.add('fa-angle-up');
+		document.getElementById("admin-fa").classList.remove('fa-angle-up');
+		document.getElementById("admin-fa").classList.add('fa-angle-down');
 	} else {
 		$(".hidden.admin").css("max-height", "1000px");
 		hide_admin = 0;
-		document.getElementById("admin-fa").classList.remove('fa-angle-up');
-		document.getElementById("admin-fa").classList.add('fa-angle-down');
+		document.getElementById("admin-fa").classList.remove('fa-angle-down');
+		document.getElementById("admin-fa").classList.add('fa-angle-up');
 	}
 }
 
