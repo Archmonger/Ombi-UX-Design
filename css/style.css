@@ -176,6 +176,11 @@ body {
   display: inline;
 }
 /* Sidenav */
+.hidden {
+  overflow: hidden;
+  transition: all 1s ease;
+  max-height: 1000px;
+}
 .sidenav {
   z-index: 2;
   height: 100%;
@@ -215,7 +220,7 @@ body {
   border-bottom: var(--navpages-button-border);
   border-top: var(--navpages-button-border);
 }
-.navpages-page.group .fa-angle-up {
+.navpages-page.group .fa-angle-up, .navpages-page.group .fa-angle-down {
   float: right;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -331,6 +336,11 @@ body {
   margin: 7px 6px;
 }
 /* Modal */
+.episode-container {
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 1.25s ease-in-out;
+}
 .modal-no-tint {
   display: none;
   position: fixed;
@@ -406,7 +416,13 @@ body {
   display: grid;
   grid-template-columns: 30px 93% 30px;
 }
-.season-block:nth-child(odd), .episode-block:nth-child(odd) {
+.season-one .episode-block:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+.season-two .episode-block:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.03);
+}
+.season-block.season-1, .season-block.season-3, .season-block.season-5 {
   background: rgba(255, 255, 255, 0.03);
 }
 .season-block .modal-dot, .episode-block .modal-dot {

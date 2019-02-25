@@ -23,79 +23,83 @@
               <i class="fas fa-window-close" onclick="hideEpisodeModal()"></i>
             </div>
             <div class="modal-seasons-container">
-              <div class="season-block">
+              <div class="season-block season-1" onclick="hideSeasonOne()">
                 <input type="checkbox">
                 <div class="season">
                   <div class="modal-dot red"></div> Season 1 - "The Return of the Flash"
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <i id="season-one-fa" class="fas fa-angle-down"></i>
               </div>
-              <div class="episode-block">
-                <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E01 - Pilot
+              <div class="episode-container season-one">
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E01 - Pilot
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E02 - Fastest Man Alive
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E03 - Things You Can't Outrun
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E04 - Going Rogue
+                  </div>
                 </div>
               </div>
-              <div class="episode-block">
+              <div class="season-block season-2">
                 <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E02 - Fastest Man Alive
-                </div>
-              </div>
-              <div class="episode-block">
-                <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E03 - Things You Can't Outrun
-                </div>
-              </div>
-              <div class="episode-block">
-                <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E04 - Going Rogue
-                </div>
-              </div>
-              <div class="season-block">
-                <input type="checkbox">
-                <div class="season">
+                <div class="season" onclick="hideSeasonTwo()">
                   <div class="modal-dot yellow"></div> Season 2 - "Finding the Lost Pontifex"
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <i id="season-two-fa" class="fas fa-angle-down"></i>
               </div>
-              <div class="episode-block">
-                <div class="episode">
-                  <div class="modal-dot green"></div> E01 - The Man Who Saved Central City
+              <div class="episode-container season-two">
+                <div class="episode-block">
+                  <div class="episode">
+                    <div class="modal-dot green"></div> E01 - The Man Who Saved Central City
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <div class="episode">
+                    <div class="modal-dot yellow"></div> E02 - Flash of Two Worlds
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E03 - Family of Rogues
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E04 - The Fury of Firestorm
+                  </div>
                 </div>
               </div>
-              <div class="episode-block">
-                <div class="episode">
-                  <div class="modal-dot yellow"></div> E02 - Flash of Two Worlds
-                </div>
-              </div>
-              <div class="episode-block">
-                <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E03 - Family of Rogues
-                </div>
-              </div>
-              <div class="episode-block">
-                <input type="checkbox">
-                <div class="episode">
-                  <div class="modal-dot red"></div> E04 - The Fury of Firestorm
-                </div>
-              </div>
-              <div class="season-block">
+              <div class="season-block season-3">
                 <div class="season">
                   <div class="modal-dot green"></div> Season 3 - "Faster Than Lightning"
                 </div>
                 <i class="fas fa-angle-down"></i>
               </div>
-              <div class="season-block">
+              <div class="season-block season-4">
                 <div class="season">
                   <div class="modal-dot green"></div> Season 4 - "Can't Look Back"
                 </div>
                 <i class="fas fa-angle-down"></i>
               </div>
-              <div class="season-block">
+              <div class="season-block season-5">
                 <div class="season">
                   <div class="modal-dot green"></div> Season 5 - "Roadblocks"
                 </div>
@@ -275,7 +279,7 @@
       <div class="sidenav">
         <div id="navpages" class="navpages">
           <div id="navpages-availablePages" class="navpages-availablePages">
-            <a class="navpages-page group">Request<i class="fas fa-angle-up"></i>
+            <a class="navpages-page group discover" onclick="hideDiscover()">Request<i id="discover-fa" class="fas fa-angle-up"></i>
             </a>
             <div class="hidden discover">
               <a class="navpages-page suboption discover active">Discover</a>
@@ -283,15 +287,15 @@
               <a href="#" class="navpages-page suboption discover">Movies</a>
               <a href="#" class="navpages-page suboption discover">Music</a>
             </div>
-            <a class="navpages-page group">User Options<i class="fas fa-angle-up"></i></a>
+            <a class="navpages-page group user" onclick="hideUser()">User Options<i id="user-fa" class="fas fa-angle-up"></i></a>
             <div class="hidden user">
               <a href="#" class="navpages-page suboption user">My Requests</a>
               <a href="#" class="navpages-page suboption user">Report Issue</a>
               <a href="#" class="navpages-page suboption user">Settings</a>
               <a href="#" class="navpages-page suboption user">Log Out</a>
             </div>
+            <a class="navpages-page group admin" onclick="hideAdmin()">Admin<i id="admin-fa" class="fas fa-angle-up"></i></a>
             <div class="hidden admin">
-              <a class="navpages-page group">Admin<i class="fas fa-angle-up"></i></a>
               <a href="#" class="navpages-page suboption admin">Manage Requests</a>
               <a href="#" class="navpages-page suboption admin">Manage Users</a>
               <a href="#" class="navpages-page suboption admin">View Issues</a>
