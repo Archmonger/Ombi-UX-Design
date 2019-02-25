@@ -46,7 +46,7 @@
   --modal-height: 380px;
   --modal-poster-width: 220px;
   --modal-poster-height: calc(var(--modal-poster-width) * 1.5);
-  --modal-template-rows: calc((var(--modal-height) - var(--modal-poster-height)) /2) 60px 90px auto;
+  --modal-template-rows: calc((var(--modal-height) - var(--modal-poster-height)) /2 + 20px) 40px 90px auto;
   --modal-template-columns: calc(var(--modal-poster-width) + (var(--modal-height) - var(--modal-poster-height))) auto;
 }
 /* Body */
@@ -484,7 +484,6 @@ body {
   grid-column: 2;
   font-family: var(--global-font);
   font-weight: 700;
-  margin-top: 20px;
   font-size: 24px;
 }
 .modal .fa-holder {
