@@ -210,6 +210,9 @@
 .grid-reccomendations .posterContainer {
   margin-bottom: 0px;
 }
+.grid-images img {
+  padding-right: 10px;
+}
 /* Global */
 .viewport {
   width: calc(100vw - var(--sidenav-width) - 67px);
