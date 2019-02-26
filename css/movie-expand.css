@@ -1,3 +1,16 @@
+.movie-backdrop-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: calc(100vw - var(--sidenav-width) - 7px);
+}
+.movie-backdrop-container img {
+  width: calc(100vw - var(--sidenav-width) - 7px);
+  max-height: 325px;
+  object-fit: cover;
+  opacity: 0.5;
+}
 .movie-grid {
   display: grid;
   grid-template-columns: 250px 30px auto;
