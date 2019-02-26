@@ -197,7 +197,7 @@
 }
 .grid-video-inner-container, .inner-container {
   height: 100%;
-  width: 200%;
+  width: 500%;
   margin: auto;
 }
 .grid-poster-outer-container, .outer-container {
@@ -206,7 +206,7 @@
   padding: 7px 5px;
 }
 .grid-poster-inner-container {
-  width: 200%;
+  width: 500%;
 }
 .grid-reccomendations .posterContainer {
   margin-bottom: 0px;
