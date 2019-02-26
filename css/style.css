@@ -52,7 +52,7 @@
   --grid-object-bg: #FFF;
   --movie-indicator: #b66707;
   --grid-object-spacing: 20px;
-  --grid-object-padding: 15px;
+  --grid-object-padding: 20px;
   --grid-object-font-color: rgba(0, 0, 0, 0.75);
 }
 /* Body */
@@ -100,6 +100,9 @@ body {
 }
 .light {
   font-weight: 300;
+}
+.box-shadow {
+  box-shadow: var(--box-shadow);
 }
 /* Navbar */
 .navbar {
