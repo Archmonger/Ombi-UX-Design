@@ -63,7 +63,6 @@
   box-sizing: border-box;
   margin-top: var(--grid-object-spacing);
   width: 100%;
-  margin-top: 15px;
   background: var(--grid-object-bg);
   border-radius: 4px;
   box-shadow: var(--box-shadow);
@@ -135,6 +134,71 @@
   margin-top: 5px;
   color: #4ecea9;
 }
+.grid-cast {
+  box-sizing: border-box;
+  margin-top: var(--grid-object-spacing);
+  width: 100%;
+  background: var(--grid-object-bg);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--grid-object-font-color);
+  padding: var(--grid-object-padding);
+  font-size: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.grid-cast .posterContainer {
+  height: calc(var(--poster-height) + 55px);
+}
+.grid-cast .posterContainer-title {
+  width: unset;
+}
+.grid-cast-poster-container {
+  overflow: hidden;
+  height: calc(var(--poster-height) + 55px);
+  padding: 7px;
+}
+.grid-cast .fa-angle-right, .right-arrow {
+  position: absolute;
+  font-size: 28px;
+  right: 20px;
+  top: 45%;
+  color: var(--searchbar-bg);
+}
+.object-head {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.grid-videos {
+  box-sizing: border-box;
+  margin-top: var(--grid-object-spacing);
+  width: 100%;
+  background: var(--grid-object-bg);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--grid-object-font-color);
+  padding: var(--grid-object-padding);
+  font-size: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.grid-video-inner-container iframe {
+  margin-right: 10px;
+}
+.grid-video-outer-container {
+  height: 220px;
+  width: calc(100% - 30px);
+  overflow: hidden;
+}
+.grid-video-inner-container {
+  height: 100%;
+  width: 200%;
+}
 /* Global */
 .viewport {
   width: calc(100vw - var(--sidenav-width) - 67px);
@@ -155,6 +219,13 @@
 .movie-grid {
   display: grid;
   grid-template-columns: 250px 30px auto;
+}
+.grid-cast .fa-angle-right {
+  font-size: 28px;
+  margin: auto 0;
+  margin-left: 10px;
+  color: var(--searchbar-bg);
+  float: right;
 }
 /* Left Side */
 .left-group {
