@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/movie-expand.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
@@ -323,7 +323,9 @@
             </div>
             <div class="quick-info-block">
               <div class="quick-info bold"> Request Status </div>
-              <div class="quick-info"> Unrequested <div class="modal-dot red"> </div>
+              <div class="quick-info">
+                <div class="" id="movie-request-status"> Unrequested </div>
+                <div id="movie-request-dot" class="modal-dot red"> </div>
               </div>
             </div>
             <div class="quick-info-block">
@@ -386,7 +388,12 @@
           </div>
           <div class="grid-main-info">
             <div class="main-title"> Aquaman (2018)</div>
-            <div class="main-rating"> 6.7 / 10 </div>
+            <div class="main-rating">
+              <div class="inline bold"> SCORE: </div>
+              <div class="inline light rating"> 6.7 / 10 </div>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="request-button aquaman" onclick="aquamanRequestedBtn()"><i class="fas fa-plus"></i> REQUEST</div>
           </div>
           <div class="grid-overview">
           </div>

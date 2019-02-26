@@ -92,6 +92,15 @@ body {
 .yellow {
   background-color: var(--yellow-dot);
 }
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.light {
+  font-weight: 300;
+}
 /* Navbar */
 .navbar {
   z-index: 3;
