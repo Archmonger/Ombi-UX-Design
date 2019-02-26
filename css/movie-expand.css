@@ -85,6 +85,7 @@
   grid-column: 1;
   padding-right: 25px;
   font-size: 16px;
+  line-height: 22px;
 }
 .grid-reviews {
   grid-row: 1;
