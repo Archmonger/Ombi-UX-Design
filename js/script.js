@@ -135,8 +135,8 @@ function aquamanRequestedBtn() {
 	$(".request-button.aquaman").css("background", "#cc7b19");
 	if (document.getElementById("movie-request-dot").classList.contains('red')) {
 		document.getElementById("movie-request-dot").classList.remove('red');
-		document.getElementById("movie-request-dot").classList.add('yellow');
-		$("#movie-request-status").text("Processing");
+		document.getElementById("movie-request-dot").classList.add('green');
+		$("#movie-request-status").text("Requested");
 	}
 }
 
