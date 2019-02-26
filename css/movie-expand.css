@@ -17,11 +17,16 @@
 .main-rating {
   background: var(--searchbar-bg);
   border-radius: 6px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   font-size: 20px;
   padding: 8px 11px;
   box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+.main-rating:hover {
+  color: #FFF;
+  background: #333333;
 }
 .rating {
   color: #64eac4;
@@ -105,6 +110,10 @@
   padding-bottom: 4px;
   font-weight: 700;
   box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+.grid-collection-btn:hover {
+  background: #d47808;
 }
 .grid-quick-info {
   box-sizing: border-box;
