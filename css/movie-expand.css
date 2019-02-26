@@ -27,6 +27,7 @@
 }
 .rating {
   color: #64eac4;
+  font-weight: 700;
 }
 .grid-main-info .fa-ellipsis-v {
   display: block;
