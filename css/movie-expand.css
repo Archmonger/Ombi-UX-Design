@@ -60,7 +60,6 @@
   background: #2ba180;
 }
 .grid-overview {
-  display: grid;
   box-sizing: border-box;
   margin-top: var(--grid-object-spacing);
   width: 100%;
@@ -72,7 +71,6 @@
   color: var(--grid-object-font-color);
   padding: var(--grid-object-padding);
   font-size: 15px;
-  grid-template-columns: 30% auto;
 }
 .grid-overview .bold {
   font-size: 18px;
@@ -92,7 +90,7 @@
   grid-column: 2;
   display: grid;
   grid-template-columns: 32% auto 32% 25px;
-  padding-left: 25px;
+  padding-top: 25px;
 }
 .grid-reviews .bold.head {
   grid-row: 1;
