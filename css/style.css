@@ -340,7 +340,7 @@ body {
   padding: 8px 9px;
   right: 0px;
   top: 0px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 19px;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -349,6 +349,9 @@ body {
 }
 .posterContainer:hover .fa-ellipsis-v {
   opacity: 0.75;
+}
+.fa-ellipsis-v:hover {
+  color: #FFF;
 }
 .availablity-dot {
   width: 4px;
