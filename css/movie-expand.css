@@ -49,6 +49,10 @@
   top: 20px;
   font-size: 28px;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s ease;
+}
+.grid-main-info .fa-ellipsis-v:hover {
+  color: #FFF;
 }
 .request-button {
   color: #FFF;
