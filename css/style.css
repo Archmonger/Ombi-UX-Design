@@ -330,6 +330,10 @@ body {
   width: var(--poster-width);
   margin: 2px;
   font-size: 18px;
+  transition: all 0.3s ease;
+}
+.posterContainer .fa-angle-down:hover {
+  color: rgba(255, 255, 255, 0.85);
 }
 .posterContainer .fa-ellipsis-v {
   position: absolute;
