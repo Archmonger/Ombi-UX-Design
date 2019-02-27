@@ -207,7 +207,7 @@
 .grid-poster-inner-container {
   width: 500%;
 }
-.grid-reccomendations .posterContainer {
+.grid-recommendations .posterContainer {
   margin-bottom: 0px;
 }
 .grid-images img {
@@ -241,7 +241,7 @@
   color: var(--searchbar-bg);
   float: right;
 }
-.grid-reccomendations, .grid-images {
+.grid-recommendations, .grid-images {
   box-sizing: border-box;
   margin-top: var(--grid-object-spacing);
   width: 100%;
