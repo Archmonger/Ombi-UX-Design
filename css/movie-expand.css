@@ -29,6 +29,16 @@
   color: #64eac4;
   font-weight: 700;
 }
+.user-rating {
+  float: right;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  background: #258a6db8;
+  padding: 5px;
+  border-radius: 5px;
+}
 .grid-main-info .fa-ellipsis-v {
   display: block;
   color: rgba(255, 255, 255, 0.7);
