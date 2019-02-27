@@ -345,6 +345,7 @@ body {
   transition-duration: 0.3s;
   transition-timing-function: ease;
   opacity: 0;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 .posterContainer:hover .fa-ellipsis-v {
   opacity: 0.75;
