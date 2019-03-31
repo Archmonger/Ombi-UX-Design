@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ombi V4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="preview-modals">
+        <div class="modal-no-tint">
+          <div class="modal">
+            <div class="modal-fa-holder">
+              <i class="fas fa-window-close" onclick="hideEpisodeModal()"></i>
+            </div>
+            <div class="modal-seasons-container">
+              <div class="season-block season-1" onclick="hideSeasonOne()">
+                <input type="checkbox">
+                <div class="season">
+                  <div class="modal-dot red"></div> Season 1 - "The Return of the Flash"
+                </div>
+                <i id="season-one-fa" class="fas fa-angle-down"></i>
+              </div>
+              <div class="episode-container season-one">
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E01 - Pilot
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E02 - Fastest Man Alive
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E03 - Things You Can't Outrun
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E04 - Going Rogue
+                  </div>
+                </div>
+              </div>
+              <div class="season-block season-2">
+                <input type="checkbox">
+                <div class="season" onclick="hideSeasonTwo()">
+                  <div class="modal-dot yellow"></div> Season 2 - "Finding the Lost Chapter"
+                </div>
+                <i id="season-two-fa" class="fas fa-angle-down"></i>
+              </div>
+              <div class="episode-container season-two">
+                <div class="episode-block">
+                  <div class="episode">
+                    <div class="modal-dot green"></div> E01 - The Man Who Saved Central City
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <div class="episode">
+                    <div class="modal-dot yellow"></div> E02 - Flash of Two Worlds
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E03 - Family of Rogues
+                  </div>
+                </div>
+                <div class="episode-block">
+                  <input type="checkbox">
+                  <div class="episode">
+                    <div class="modal-dot red"></div> E04 - The Fury of Firestorm
+                  </div>
+                </div>
+              </div>
+              <div class="season-block season-3">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 3 - "Faster Than Lightning"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="season-block season-4">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 4 - "Can't Look Back"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div class="season-block season-5">
+                <div class="season">
+                  <div class="modal-dot green"></div> Season 5 - "Roadblocks"
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="modal-request-button-container">
+              <div class="modal-confirm-button flash" onclick="flashModalConfirmedBtn()">CONFIRM</div>
+              <div class="modal-select-button flash" onclick="flashModalSelectedBtn()">SELECT ALL</div>
+            </div>
+          </div>
+        </div>
+        <div class="aquaman modal-tint">
+          <div class="modal">
+            <div class="modal-fa-holder">
+              <i class="fas fa-window-close" onclick="hideModal()"></i>
+              <a href="../html/movie-expand-view.html">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+            <img class="modal-poster" src="../images/aquaman-poster.jpg" alt="">
+            <div class="modal-title">Aquaman</div>
+            <div class="modal-info">
+              <div class="modal-info-text-left">
+                <div class="info-block">
+                  <div class="info info-bold"> Availabity: <div class="info">Unavailable <div class="modal-dot red">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Request Status: <div class="info">Unrequested <div class="modal-dot red">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Content Type: <div class="info"> Movie</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-info-text-right">
+                <div class="info-block">
+                  <div class="info info-bold"> In Cinemas: <div class="info">December 2018 </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Genres: <div class="info">Fantasy, Adventure </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Score: <div class="info">6.3 / 10 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the
+              remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, must retrieve the legendary Trident of
+              Atlan and embrace his destiny as protector of the deep. </div>
+            <div class="modal-request-button-container">
+              <div class="modal-request-button aquaman" onclick="aquamanModalRequestedBtn()"><i class="fas fa-plus"></i> REQUEST</div>
+            </div>
+          </div>
+        </div>
+        <div class="flash modal-tint">
+          <div class="modal">
+            <div class="modal-fa-holder">
+              <i class="fas fa-window-close" onclick="hideModal()"></i>
+              <i class="fas fa-expand"></i>
+              <i class="fas fa-play"></i>
+            </div>
+            <img class="modal-poster" src="../images/flash-poster.jpg" alt="">
+            <div class="modal-title">The Flash (2018)</div>
+            <div class="modal-info">
+              <div class="modal-info-text-left">
+                <div class="info-block">
+                  <div class="info info-bold"> Availabity: <div class="info">Partially Available <div class="modal-dot yellow">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Request Status: <div class="info">Requested <div class="modal-dot green">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Content Type: <div class="info"> TV Show</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-info-text-right">
+                <div class="info-block">
+                  <div class="info info-bold"> Premerie: <div class="info">October 2014 </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Genres: <div class="info">Drama, Sci-Fi & Fantasy </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <div class="info info-bold"> Score: <div class="info">6.7 / 10 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability
+              to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only "meta-human" who was created in the wake of the accelerator explosion -- and
+              not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to...</div>
+            <div class="modal-request-button-container">
+              <div class="modal-request-button flash" onclick="showFlashEpisodeModal()"><i class="fas fa-plus"></i> REQUEST</div>
+            </div>
+          </div>
+        </div>
+        <div class="kiiara modal-tint">
+          <div class="modal">
+            <div class="modal-fa-holder">
+              <i class="fas fa-window-close" onclick="hideModal()"></i>
+            </div>
+            <div class="modal-poster modal-poster-music">
+              <img class="modal-poster-music-album" src="../images/kiiara-album.jpg" alt="">
+            </div>
+            <div class="modal-title">Kiiara - Low Kii Savage</div>
+            <div class="modal-description modal-description-music">
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num bold"> Track # </div>
+                <div class="modal-music-listing-artist bold"> Artist(s) </div>
+                <div class="modal-music-listing-name bold"> Title </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 1 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Gold </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 2 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Feels </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 3 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Tennessee </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 4 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Intention </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 5 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Say Anymore </div>
+              </div>
+              <div class="modal-music-listing">
+                <div class="modal-music-listing-num"> 6 </div>
+                <div class="modal-music-listing-artist"> Kiiara </div>
+                <div class="modal-music-listing-name"> Hang up tha phone </div>
+              </div>
+            </div>
+            <div class="modal-request-button-container">
+              <div class="modal-request-button kiiara" onclick="kiiaraModalRequestedBtn()"><i class="fas fa-plus"></i> REQUEST</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <img src="../images/ombi_logo.png" alt="ombi logo" class="logo">
+        <div class="searchbar">
+          <input type="text" name="content-search" value="Search..." onfocus="this.value=''">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="username-container">
+          <div class="username"> username </div>
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+      <div class="sidenav">
+        <div id="navpages" class="navpages">
+          <div id="navpages-availablePages" class="navpages-availablePages">
+            <a class="navpages-page group discover" onclick="hideDiscover()">Request<i id="discover-fa" class="fas fa-angle-up"></i>
+            </a>
+            <div class="hidden discover">
+              <a class="navpages-page suboption discover active">Discover</a>
+              <a href="#" class="navpages-page suboption discover">TV Shows</a>
+              <a href="#" class="navpages-page suboption discover">Movies</a>
+              <a href="#" class="navpages-page suboption discover">Music</a>
+            </div>
+            <a class="navpages-page group user" onclick="hideUser()">User Options<i id="user-fa" class="fas fa-angle-up"></i></a>
+            <div class="hidden user">
+              <a href="#" class="navpages-page suboption user">My Requests</a>
+              <a href="#" class="navpages-page suboption user">Report Issue</a>
+              <a href="#" class="navpages-page suboption user">Settings</a>
+              <a href="#" class="navpages-page suboption user">Log Out</a>
+            </div>
+            <a class="navpages-page group admin" onclick="hideAdmin()">Admin<i id="admin-fa" class="fas fa-angle-up"></i></a>
+            <div class="hidden admin">
+              <a href="#" class="navpages-page suboption admin">Manage Requests</a>
+              <a href="#" class="navpages-page suboption admin">Manage Users</a>
+              <a href="#" class="navpages-page suboption admin">View Issues</a>
+              <a href="#" class="navpages-page suboption admin">Mass Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="viewport discover">
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down" onclick="showAquamanModal()"></i>
+          <div class="poster-tint" onclick="showAquamanModal()"></div>
+          <a href="../html/movie-expand-view.html">
+            <img src="../images/aquaman-poster.jpg" class="posterContainer-poster poster-movie">
+          </a>
+          <div class="posterContainer-title">Aquaman</div>
+          <div class="availablity-dot red"></div>
+          <div class="posterContainer-description">Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the
+            remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary
+            Trident of Atlan and embrace his destiny as protector of the deep.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down" onclick="showFlashModal()"></i>
+          <div class="poster-tint" onclick="showFlashModal()"></div>
+          <img src="../images/flash-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">The Flash (2014)</div>
+          <div class="availablity-dot yellow"></div>
+          <div class="posterContainer-description">After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down" onclick="showKiiaraModal()"></i>
+          <div class="poster-tint" onclick="showKiiaraModal()"></div>
+          <div class="posterContainer-poster poster-music-container">
+            <img src="../images/kiiara-album.jpg" class="posterContainer-poster poster-music">
+          </div>
+          <div class="posterContainer-title">Low Kii Savage <div class="posterContainer-subtitle">Kiiara</div>
+          </div>
+          <div class="availablity-dot red"></div>
+          <div class="posterContainer-description">Gold, Feels, Tennessee, Intention, Say Anymore, Hang up tha phone</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/spiderman-poster.jpg" class="posterContainer-poster poster-movie">
+          <div class="posterContainer-title">Spider-Man: Far From Home</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with
+            fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/isekai-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Problem Children Are Coming Fro...</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The story follows Sakamaki Izayoi, a boy bored with the entire world. One day, an envelope arrives for him. The moment Izayoi opens the envelope, he is transported to an alternate world. There, he
+            discovers that two other problem children were transported by envelopes as well — a taciturn girl named Kasukabe You with a cat, and a beautiful yet haughty girl named Kudou Asuka. A girl named Kuro Usagi (Black Rabbit) summoned the
+            three to the community No Name to overthrow the devil.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/marvel-poster.jpg" class="posterContainer-poster poster-movie">
+          <div class="posterContainer-title">Captain Marvel</div>
+          <div class="availablity-dot yellow"></div>
+          <div class="posterContainer-description">Carol Danvers becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new
+            adventure from a previously unseen period in the history of the Marvel Cinematic Universe.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+        <div class="home-posterContainer posterContainer">
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-angle-down"></i>
+          <div class="poster-tint"></div>
+          <img src="../images/violet-evergarden-poster.jpg" class="posterContainer-poster poster-tv">
+          <div class="posterContainer-title">Violet Evergarden</div>
+          <div class="availablity-dot green"></div>
+          <div class="posterContainer-description">The Great War finally came to an end after four long years of conflict; fractured in two, the continent of Telesis slowly began to flourish once again. Caught up in the bloodshed was Violet
+            Evergarden, a young girl raised for the sole purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish during the War's final leg, she was left with only words from the person she held dearest, but with no
+            understanding of their meaning.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
