@@ -13,7 +13,7 @@
   --sidenav-bg: #fdfdfd;
   --sidenav-width: 240px;
   --navpages-button-padding-group: 15px 20px;
-  --navpages-button-padding-suboption: 15.5px 40px;
+  --navpages-button-padding-suboption: 15.5px 20px 15.5px 40px;
   --navpages-button-border: 1px solid rgba(0, 0, 0, 0.1);
   --navpages-font-color: #323232;
   /* Navbar */
@@ -244,6 +244,14 @@ body {
 }
 .navpages-page.suboption {
   padding: var(--navpages-button-padding-suboption);
+}
+.discover .fa-filter {
+  float: right;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+.discover .fa-filter:hover {
+  color: #FFF;
 }
 /* Posters */
 .posterContainer {
