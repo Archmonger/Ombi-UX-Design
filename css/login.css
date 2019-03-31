@@ -1,0 +1,103 @@
+:root {
+  /* Globals */
+  --body-bg: #F5F5F5;
+  --global-font: 'Roboto', sans-serif;
+  --primary-font-size: 14px;
+  --secondary-font-size: 12px;
+  --box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+  --accent-color: #258a6d;
+  --green-dot: #39b54a;
+  --red-dot: #ff0000;
+  --yellow-dot: #ffff00;
+  /* Sidenav */
+  --sidenav-bg: #fdfdfd;
+  --sidenav-width: 240px;
+  --navpages-button-padding-group: 15px 20px;
+  --navpages-button-padding-suboption: 15.5px 40px;
+  --navpages-button-border: 1px solid rgba(0, 0, 0, 0.1);
+  --navpages-font-color: #323232;
+  /* Navbar */
+  --navbar-bg: #3f3f3f;
+  --navbar-height: 55px;
+  --navbar-font-color: rgba(255, 255, 255, 0.5);
+  --navbar-side-padding: 20px;
+  --searchbar-font-color: rgba(255, 255, 255, 0.3);
+  --searchbar-bg: #252525;
+  --searchbar-width: 25vw;
+}
+html, body, .main, .login-bg {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.login-bg {
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box {
+  background: #FFF;
+  width: 50%;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  max-width: 750px;
+}
+.ombi-logo {
+  width: 50%;
+  margin: 0 25%;
+}
+.username, .password {
+  display: block;
+  border: none;
+  outline: none !important;
+  background: transparent;
+  color: #3f3f3f8f;
+  border-bottom: 1px solid var(--accent-color);
+  padding: 5px 0px;
+  font-size: 16px;
+  font-family: var(--global-font);
+  font-weight: 300;
+  width: 40%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.username:focus, .password:focus {
+  color: var(--searchbar-bg);
+}
+hr {
+  border-color: var(--accent-color);
+  opacity: 0.15;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.sign-in {
+  box-shadow: var(--box-shadow);
+  background: var(--accent-color);
+  color: #FFF;
+  width: 100px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: var(--global-font);
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.sign-in:hover, .sign-in:active {
+  background: #249e7b;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
