@@ -147,3 +147,51 @@ function hideModal() {
 function hideEpisodeModal() {
 	$(".modal-no-tint").css("display", "none");
 }
+
+// Tooltips
+var filterBtnSelector = ".navpages-page.suboption.discover.active>svg";
+// var redDots = ".availablity-dot.red";
+// var yellowDots = ".availablity-dot.yellow";
+// var greenDots = ".availablity-dot.green";
+// var allDots = ".availablity-dot";
+
+// Helper functions
+function elementReady(selector) {
+	return new Promise((resolve, reject) => {
+		let el = document.querySelector(selector);
+		if (el) {
+			resolve(el);
+		}
+		new MutationObserver((mutationRecords, observer) => {
+				// Query for elements matching the specified selector
+				Array.from(document.querySelectorAll(selector)).forEach((element) => {
+					resolve(element);
+					// Once we have resolved we don't need the observer anymore.
+					observer.disconnect();
+				});
+			})
+			.observe(document.documentElement, {
+				childList: true,
+				subtree: true
+			});
+	});
+}
+function summonTippy(classSelector, tippyValues) {
+	$.getScript("https://archmonger.github.io/Blackberry-Themes/Resources/popper.js", function() {
+		$.getScript("https://archmonger.github.io/Blackberry-Themes/Resources/tippy.js", function() {
+			tippy(classSelector, tippyValues);
+		});
+	});
+};
+
+// Put Tippys on the logout btns, tab btns, and group btns.
+elementReady(filterBtnSelector).then( (doThings) => {
+		// Provide all the things with tippy content values
+		$(filterBtnSelector).attr("data-tippy-content", "Filter");
+		summonTippy(filterBtnSelector, {
+			placement: "right",
+			boundary: "window",
+			touch: false,
+			sticky: true
+		});
+});

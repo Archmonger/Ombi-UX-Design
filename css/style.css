@@ -36,9 +36,12 @@
   --poster-title-top-padding: 7px;
   --poster-title-bottom-padding: 5px;
   --poster-box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
-  --tv-indicator-hr: 1px solid #0076a3;
-  --movie-indicator-hr: 1px solid #b66707;
-  --music-indicator-hr: 1px solid #9317bb;
+  --tv-color: #0076a3;
+  --tv-indicator-hr: 1px solid var(--tv-color);
+  --movie-color: #b66707;
+  --movie-indicator-hr: 1px solid var(--movie-color);
+  --music-color: #9317bb;
+  --music-indicator-hr: 1px solid var(--music-color);
   --music-poster-gradient: linear-gradient(135deg, var(--accent-color), #161d21);
   /* Modal */
   --modal-top-button-color: rgba(255, 255, 255, 0.7);
@@ -223,6 +226,15 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
 }
+.navpages-availablePages .tv.suboption:hover {
+  background-color: var(--tv-color);
+}
+.navpages-availablePages .movie.suboption:hover {
+  background-color: var(--movie-color);
+}
+.navpages-availablePages .music.suboption:hover {
+  background-color: var(--music-color);
+}
 .navpages-availablePages .navpages-page {
   text-decoration: none;
   font-size: var(--primary-font-size);
@@ -328,6 +340,9 @@ body {
   z-index: 4;
   transition: all 0.3s ease;
   filter: brightness(25%);
+}
+.poster-tint:hover {
+  filter: brightness(225%);
 }
 .posterContainer .fa-angle-down {
   position: absolute;
