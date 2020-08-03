@@ -341,9 +341,6 @@ body {
   transition: all 0.3s ease;
   filter: brightness(25%);
 }
-.poster-tint:hover {
-  filter: brightness(225%);
-}
 .posterContainer .fa-angle-down {
   position: absolute;
   bottom: 0px;
@@ -351,7 +348,8 @@ body {
   z-index: 5;
   vertical-align: middle;
   width: var(--poster-width);
-  margin: 2px;
+  padding-top: 40px;
+  padding-bottom: 2px;
   font-size: 18px;
   transition: all 0.3s ease;
 }
